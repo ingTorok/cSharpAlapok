@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace _02SikiidmokTerulete
 {
@@ -30,14 +31,18 @@ namespace _02SikiidmokTerulete
             planes.Add(circle);
             planes.Add(triangle);
 
-            var sum = 0;
+            //var sum = 0;
 
-            foreach (var plane in planes)
-            {
-                sum += plane.Area();
-            }
+            //foreach (var plane in planes)
+            //{
+            //    sum += plane.Area();
+            //}
 
-            Console.WriteLine($"Sum of the areas: {sum}");
+            //with Linq
+            //var sum = planes.Sum(x => x.Area());
+            //Console.WriteLine($"Sum of the areas: {sum}");
+
+            Console.WriteLine($"Sum of the areas: {planes.Sum(x => x.Area())}");
 
             Console.ReadLine();
         }
