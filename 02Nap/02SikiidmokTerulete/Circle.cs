@@ -2,7 +2,7 @@
 
 namespace _02SikiidmokTerulete
 {
-    public class Circle
+    public class Circle : IPlane
     {
         private int radius;
 
@@ -11,9 +11,9 @@ namespace _02SikiidmokTerulete
             this.radius = radius;
         }
 
-        public double Area()
+        public int Area()
         {
-            return 2 * radius * Math.PI;
+            return (int)(2 * radius * Math.PI);
         }
     }
 }
